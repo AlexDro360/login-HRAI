@@ -40,12 +40,14 @@ En el typeScript estan declaradas las variables email, que contiene el valor ing
 Esta es una función que se ejecuta cuando se presiona el botón de mostra contraseña y la oculta o la muestra segun sea el caso.
 
 ![{8D00FA8F-6F13-4076-B0BE-612B641F4D68}](https://github.com/user-attachments/assets/7a1dded3-7a4c-447a-90de-bc1eacd55258)
+
 Esta funcion es la que se encarga de validar la informacion del usuario, recibe un email y un password los cuales los toma de las variables declaradas ahi mismo, despues llama al metodo login que esta en el servicio userservice y le pasa el password y el email, posteriormente recibe la respuesta de este (de la peticion de la api declarada en el metodo login) y si fue una respuesta exitosa (next) redirige al usuario a la vista de home, si ocurrio un error (error) imprime el error en consola, y se pone en true la variable loginError para que nuestre el mensaje de error, despues markForCheck lo que hace es revisar la vista para ver si hubo un cambio y muestre el mensaje.
 
 ## Componente barra_lateral
 Este componente contiene la barra lateral o menú lateral que se muestra en el home (dashboard), esta compuesto por un mat-list que contiene una foto, el nombre del usuario, y varios botones para las opciones del menú lateral separados por un mat-divider, el boton cerrar sesión ejecuta el metodo del mismo nombre del typescript.
 
 ![![{9E5476F8-64C0-42A6-8733-4B9AF87DC01B}](https://github.com/user-attachments/assets/625c627b-0c30-41b7-a71f-6b7e3b1e561c)
+
 El metodo cerrarSesion solo manda a llamar al metodo cerrarSesion que se encuentra en el servicio userService para de esta forma terminar la sesión.
 
 ## Componente home
