@@ -53,6 +53,20 @@ El metodo cerrarSesion solo manda a llamar al metodo cerrarSesion que se encuent
 ## Componente home
 Este componente contiene un menu superior e incluye al componente de la barra lateral, es la pagina de inicio de la aplicación. Consta de una barra con el logo y nombre de la aplicacion y varios menús mat-menu con varias opciones cada uno (mat-menu-item). En el HTML tambien se incluyó un sidenav el cual es un componente de material y sirve para desplegar algo al presionar un botón, en este caso cuando se presiona el icono de menú se despliega o se esconde el componente de barra_lateral (dashboard).
 
+## Resultados
+
+Cuando algun dato es incorrecto
+
+![{511101B3-4FFE-4BA8-952B-A7C553B5A527}](https://github.com/user-attachments/assets/864aa909-016c-47f6-9e3b-e74202c17be9)
+
+Pagina principal
+
+![{AF84A1CF-BC25-4EC6-A682-AD4778E34143}](https://github.com/user-attachments/assets/9486c692-4181-49e5-a24b-523001524fc7)
+
+
+
+
+
 
 
 
