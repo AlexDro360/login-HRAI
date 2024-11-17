@@ -8,6 +8,7 @@ Este se servivio fue creado para gestionar la auteticacion del usuario.
 La variable piUrl contiene la direccion url del api y token almacena el token devuelto por la api para la autentificación.
 
 De acuerdo a la documentación de la api (https://fakeapi.platzi.com/en/rest/auth-jwt/) para logear a un usuario se debe enviar una petición POST al api eb la siguiente URL https://api.escuelajs.co/api/v1/auth/login y se le debe pasar un JSON con el email y la contraseña que se quiere autentificar de la siguiente manera: 
+
 ![{47F532A1-4DE8-4125-89DD-1C75147C1194}](https://github.com/user-attachments/assets/4c84039a-7907-48d9-92e9-0611232b7ce6) 
 esta devolvera un access.token y un refresh_token en donde el acces token sirve para consultar la informacuión del usuario y el refresh_token para generar un nuevo token y no perder la sesión.
 
