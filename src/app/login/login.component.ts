@@ -22,22 +22,10 @@ import { CommonModule } from '@angular/common';
 export class LoginComponent {
   email: string = '';
   password: string = '';
-  users: any[] = [];
   loginError: boolean = false;
 
   constructor(private userservice: UserService,private router: Router, private cdr: ChangeDetectorRef){}
 
-  // log(){
-  //   console.log(this.email);
-  //   console.log(this.password);
-  //   if(this.userservice.login(this.email, this.password)){
-  //     this.router.navigate(['/home']);
-  //     this.loginError = false;
-  //   }else{
-  //     this.loginError = true;
-  //   }
-    
-  // }
   hide = signal(true);
   clickEvent(event: MouseEvent) {
     this.hide.set(!this.hide());
@@ -56,7 +44,7 @@ export class LoginComponent {
     })
   }
 
-  inicioSesion(){
-    this.router.navigate(['/home']);
-  }
+  // inicioSesion(){
+  //   this.router.navigate(['/home']);
+  // }
 }
