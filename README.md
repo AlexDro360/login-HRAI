@@ -14,7 +14,7 @@ De acuerdo a la documentación de la api (https://fakeapi.platzi.com/en/rest/aut
 Esta devolvera un access.token y un refresh_token en donde el acces token sirve para consultar la informacuión del usuario y el refresh_token para generar un nuevo token y no perder la sesión.
 
 ![{4F64CF25-07B1-43BC-8846-7909CC08AA26}](https://github.com/user-attachments/assets/9fe2e69b-d31e-4d69-a0f3-3dffd38abc22)
-Este metodo hace lo que se explico anteriormente, recibe un correo y una petición POST al API a la cual se le pasa un JSON con el email y password, despues de acuerdo a la respuesta el API con la que se verifica que eziste el access_token si es asi se manda a llamar el metodo setToken al cual se le pasa el token.
+Este metodo hace lo que se explico anteriormente, recibe un correo y una contraseña y realiza una petición POST al API a la cual se le pasa un JSON con el email y password, despues de acuerdo a la respuesta el API con la que se verifica que eziste el access_token si es asi se manda a llamar el metodo setToken al cual se le pasa el token.
 
 ![{E17142A2-2E32-4C26-A9E8-142563A02815}](https://github.com/user-attachments/assets/79e129a5-78c9-49f2-ab18-cf6e2413a582)
 Este metodo recibe un token y lo que hace es guardarlo en el almacenamiento local para de esta forma poder consultar posteriormente los datos del usuaio activo si es que se desea.
