@@ -1,0 +1,44 @@
+<main class="main">
+    <mat-card class="container">
+  
+      <h1>Iniciar Sesión</h1>
+      <h2>Programación Web</h2>
+      <div class="logo-login">
+        <img src="/img/ito.png" alt="Ito" class="logo-ito">
+      </div>
+      
+      <mat-card-content>
+        <mat-form-field class="form-field">
+          <mat-icon matSuffix>email</mat-icon>
+          <mat-label>Correo</mat-label>
+          <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" matInput placeholder="Ejemplo@gmail.com" type="email">
+          
+        </mat-form-field>
+    
+        <mat-form-field class="form-field">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [(ngModel)]="password" [ngModelOptions]="{standalone: true}" [type]="hide() ? 'password' : 'text'" />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="clickEvent($event)"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide()"
+          >
+            <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+        </mat-form-field>
+
+        <div class="alerta">
+          <mat-error *ngIf="loginError">Correo o contraseña incorrectas</mat-error>
+        </div>
+        
+    
+        <div class="button-row">
+          <button mat-fab extended (click)="log()">Iniciar Sesión </button> 
+        </div>
+      </mat-card-content>
+    </mat-card>
+    
+  </main>
+  

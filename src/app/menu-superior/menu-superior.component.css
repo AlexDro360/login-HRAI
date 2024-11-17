@@ -1,0 +1,15 @@
+div{
+    background-color: #810081;
+    padding:10px;
+    display: flex;
+}
+.logo-ito{
+    width: 40px;
+    height: 40px;
+  }
+
+ .titulo{
+    font-size: 15px;
+    color: #ffabf3;
+    font-weight: bold;
+  }

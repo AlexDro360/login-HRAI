@@ -1,0 +1,35 @@
+.menuS{
+    background-color: #005cbb;
+    margin: 0px;
+    padding:10px;
+    display: flex;
+}
+
+.sidenav{
+    padding:0px;
+    margin: 0px;
+    height: 100%;
+}
+.botonM{
+    margin: 0px;
+}
+.logo-ito{
+    width: 40px;
+    height: 40px;
+  }
+
+ .titulo{
+    font-size: 15px;
+    color: #d7e3ff;
+    font-weight: bold;
+    margin: 0px;
+    padding:10px;
+    display: flex;
+  }
+
+h1{
+    text-align: center;
+}
+.color_menu{
+    color: #d7e3ff;
+}

@@ -1,0 +1,19 @@
+.menuL{
+    max-width: 200px;
+    min-height: 100%;
+    background-color: #005cbb;
+    color: #ffabf3;
+}
+.usuarioIcon{
+    text-align: center;
+}
+
+.botonM{
+    width: 100%;
+}
+mat-list-item{
+    text-align: left;
+}
+.color_menu{
+    color: #d7e3ff;
+}
