@@ -14,14 +14,17 @@ De acuerdo a la documentación de la api (https://fakeapi.platzi.com/en/rest/aut
 Esta devolvera un access.token y un refresh_token en donde el acces token sirve para consultar la informacuión del usuario y el refresh_token para generar un nuevo token y no perder la sesión.
 
 ![{4F64CF25-07B1-43BC-8846-7909CC08AA26}](https://github.com/user-attachments/assets/9fe2e69b-d31e-4d69-a0f3-3dffd38abc22)
-Este metodo hace lo que se explico anteriormente, recibe un correo y una contraseña y realiza una petición POST al API a la cual se le pasa un JSON con el email y password, despues de acuerdo a la respuesta el API con la que se verifica que eziste el access_token si es asi se manda a llamar el metodo setToken al cual se le pasa el token.
+
+Este metodo hace lo que se explico anteriormente, recibe un correo y una contraseña y realiza una petición POST al API a la cual se le pasa un JSON con el email y password, despues de acuerdo a la respuesta del API se verifica que exista el access_token, si es asi se manda a llamar el metodo setToken al cual se le pasa el token.
 
 ![{E17142A2-2E32-4C26-A9E8-142563A02815}](https://github.com/user-attachments/assets/79e129a5-78c9-49f2-ab18-cf6e2413a582)
-Este metodo recibe un token y lo que hace es guardarlo en el almacenamiento local para de esta forma poder consultar posteriormente los datos del usuaio activo si es que se desea.
+
+Este metodo recibe un token y lo que hace es guardarlo en el almacenamiento local para que de esta forma se pueda consultar posteriormente los datos del usuaio activo si es que se desea.
 
 
 ![{33E2F72A-CD33-4C27-8E1E-5FD9FA7B8C5F}](https://github.com/user-attachments/assets/9a025714-852e-45dc-ac05-4f434db127fe)
-Este metodo lo que hace es eliminar el token del almacenamiento local y redirijar al usuario a la vista del login, funciona para el cierre de sesión.
+
+Este metodo lo que hace es eliminar el token del almacenamiento local y redirijir al usuario a la vista del login, funciona para el cierre de sesión.
 
 ## Componente Login
 
@@ -29,9 +32,11 @@ Este componente contiene todo lo relacionado con el login, el html consiste en u
 
 
 ![{37DC8E9C-C853-4F64-9984-3CFAF9C08B26}](https://github.com/user-attachments/assets/05409a4e-7cc2-4899-aa4a-e376a6fb4091)
+
 En el typeScript estan declaradas las variables email, que contiene el valor ingresado del correo, password que contiene la contraseña ingresada y loginError que contiene un booleno que establece si se muestra o no el error de inicio de sesión.
 
 ![{382E2A17-9C46-422C-9929-F88C27A83E32}](https://github.com/user-attachments/assets/5ccd0a38-d481-470b-9f79-57c75a3e78a3)
+
 Este es una función que se ejecuta cuando se presiona el botón de mostra contraseña y la oculta o la muestra segun sea el caso.
 
 ![{8D00FA8F-6F13-4076-B0BE-612B641F4D68}](https://github.com/user-attachments/assets/7a1dded3-7a4c-447a-90de-bc1eacd55258)
